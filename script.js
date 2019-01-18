@@ -1,0 +1,74 @@
+$(document).ready(function(){
+  $("#first").mouseenter(function(){
+    $("#first").css("color","#ffffff")});
+  $("#first").mouseout(function(){
+    $("#first").css("color","gray")});
+  $("#second").mouseenter(function(){
+    $("#second").css("color","#ffffff")});
+  $("#second").mouseout(function(){
+    $("#second").css("color","gray")});
+  $("#third").mouseenter(function(){
+    $("#third").css("color","#ffffff")});
+  $("#third").mouseout(function(){
+  $("#third").css("color","gray")});
+  $(".main").mouseover(function(){
+    $(".main").css("box-shadow","2px 2px 20px #d2d7dd")
+  })
+  $(".main").mouseout(function(){
+    $(".main").css("box-shadow","")
+  })
+  $("#second").click(function(){
+    $(".main").animate({
+      width: '80%',
+      height:'90%',
+      
+    },500)
+    $("#first").hide();
+    $("#third").hide();
+    $("#link").css({"top":"0%"})
+    $("#link").children().css({"top":"-10px"})
+    $("#back").css("display","inherit")
+    $(".about-content").fadeIn(2500)
+    $(".title").hide()
+  
+  });
+  $("#first").click(function(){
+    $(".main").animate({
+      width: '80%',
+      height:'90%'
+    },500)
+    $("#second").hide();
+    $("#third").hide();
+    $("#link").css({"top":"0"})
+    $("#link").children().css({"top":"-10px"})
+    $("#back").css("display","inherit")
+    $(".title").hide()
+  });
+  $("#back").click(function(){
+    $(".main").animate({
+      height:"400px",
+      width:"200px"
+    },600)
+    $("#first").show();
+    $("#second").show();
+    $("#third").show();
+    $("#link").css({"top":""})
+    $(this).css("display","none")
+    $(".about-content").hide();
+    $(".contact-content").hide();
+    $(".title").fadeIn(3000)
+  });
+  $("#third").click(function(){
+    $(".main").animate({
+      width: '80%',
+      height:'90%'
+    },500)
+    $("#first").hide();
+    $("#second").hide();
+    $("#link").css({"top":"0"})
+    $("#link").children().css({"top":"-10px"})
+    $("#back").css("display","inherit")
+    $(".contact-content").fadeIn(2500)
+    $(".title").hide()
+  });
+});

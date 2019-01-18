@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #4c4d4f;
+}
+.title{
+    position: absolute;
+    /* width: 100%; */
+    /* top: -8%; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+    /* height: 45px; */
+    color: wheat;
+    font-size: 2em;
+}
+.title h2{
+  margin: 10px;
+}
+#nick-name{
+  color: rgb(199, 190, 171);
+}
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 200px;
+  border: 1px solid #555658;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+#link{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-left: 10px;
+}
+#link a{
+  display: block;
+  position: relative;
+  font-size: 1.2em;
+  /* padding-bottom: 20px; */
+  /* border: 1px solid; */
+  margin-bottom: 35%;
+  text-decoration: none;
+  color: rgb(212, 212, 212);
+  
+}
+#back{
+  position: relative;
+  top: -1;
+  left: 10;
+  height: 20px;
+  background-color: #1c2f53;
+  width: 42px;
+  display: none;
+  z-index: 1;
+}
+#back a{
+  text-decoration: none;
+  color: white;
+}
+.about-content{
+  display: none;
+  position: absolute;
+  /* border: solid 1px; */
+  font-size: 1.5em;
+  height: auto;
+  width: 95%;
+  left: 2%;
+  top: 5%;
+  color: rgb(226, 197, 143);
+  z-index: -1;
+  text-align: justify;
+  text-justify: inter-character;
+}
+.contact-content{
+  display: none;
+  position: absolute;
+  /* border: solid 1px; */
+  font-size: 1.5em;
+  height: auto;
+  width: 95%;
+  left: 2%;
+  top: 5%;
+  color: rgb(226, 197, 143);
+  z-index: -1;
+  text-align: justify;
+  text-justify: inter-character;
+}
+.skills{
+  text-align: center;
+}
+.skills h3{
+  text-decoration: underline;
+}
+.contact a{
+  text-decoration: none;
+  color: white;
+}
+.contact a:hover{
+  text-decoration: underline;
+  color: rgb(255, 196, 0);
+}
+@media screen and (max-height: 600px) {
+  .title{
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width:550px) {
+  .about-content{
+    font-size: 1em;
+  }
+.title{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:500px) {
+  .title{
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-height: 550px) {
+  .about-content{
+    font-size: 1em;
+  }
+}
